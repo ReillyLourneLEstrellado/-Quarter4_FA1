@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Support Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Support Save the Children Philippines</h2>
+        <p>By supporting Save the Children Philippines, you help:
+            <ul>
+                <li>Provide essential healthcare resources to those in need.</li>
+                <li>Fund educational programs for underprivileged children.</li>
+                <li>Assisting  during times of crisis, and shielding them from danger and harm.</li>
+            </ul>
+        </p>
+        <form id="signupForm">
+            <label for="firstName">First Name (required):</label><br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name (required):</label><br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label>Sex (required):</label><br>
+            <input type="radio" name="sex" value="male" required> Male
+            <input type="radio" name="sex" value="female"> Female
+            <input type="radio" name="sex" value="preferNotSay"> Prefer not to say<br><br>
+
+            <label for="email">Email (required):</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contact">Contact Number (optional):</label><br>
+            <input type="text" id="contact" name="contact"><br><br>
+
+            <p class="error" id="error-message">Please fill in all required fields.</p>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
